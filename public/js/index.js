@@ -93,7 +93,6 @@ const tab = {
         <p> Ce projet est amené a s'améliorer avec le temps de nouvels options pourrait apparaitre a l'avenir </p>
         <p> Merci ! </p>
     `,"<p></p>"),
-    "text" : new fenetre("Text.txt","text","public/img/notepad.png","<p>Gmodding Youhou !</p>","")
 }
 
 for(element in tab){
