@@ -82,17 +82,38 @@ class redirect {
 
 const tab = {
     "github" : new redirect("Github","github","public/img/github.png","https://github.com/akumq"),
-    "cv" : new redirect("CV.pdf","cv","public/img/notepad.png","public/other/CV.pdf"),
     "readme": new fenetre("About.me","readme","public/img/moi.png",`
-        <p>Bonjour,<br><br> je suis Sow Amadou actuellement étudiant en informatique et 
-        je suis a la recherche d'une alternance dans ce domaine.</p>
-        <p>L'informatique est un domaine qu'in m'interesse depuis très longtemps plus particulièrement la programmation 
-        et je pense que grace a mon parcours j'ai finalement l'expérience requise pour m'essayer au travails d'entreprise
-        si vous souhaitez rentrer en contact avec moi n'hésitez pas a me contacter vias mon mails, vous pourrez également avoir d'avantage d'information
-        sur mon CV</p>
-        <p> Ce projet est amené a s'améliorer avec le temps de nouvels options pourrait apparaitre a l'avenir </p>
-        <p> Merci ! </p>
-    `,"<p></p>"),
+        <p>Hello I'm Amadou a french computer science student who likes a lot all programation related domains<p>
+        <p>I'm currently coveted to be an indie Game Develloper</p>
+        <p>since I was born my only goal was to understand
+            the world arround me, like why when i push that button the light trigger, Who can my remote car receive my orders, so Computer science came naturally 
+            I start to learn web devellopment at my 13th birthday, I immediately love it, make my own website was my revelation, and since my first website,
+            I continue to learn Computer Science as my major.
+        </p>
+    `,`<p>Thanks for reading it</p>`),
+    "skill": new fenetre("skill.me","skill","public/img/settings.png",`
+        <p>
+        <ul>
+            <li><p>HTML : <bold> Advanced </bold></p></li>
+            <li><p>CSS : <bold> Advanced </bold></p></li>
+            <li><p>JS : <bold> Advanced </bold></p></li>
+            <li><p>LUA : <bold> Advanced </bold></p></li>
+            <li><p>C : <bold> Advanced </bold></p></li>
+            <li><p>C++ : <bold> Good </bold></p></li>
+            <li><p>C# : <bold> Good </bold></p></li>
+        </ul>
+        </p>
+    `,`<p>But I can't learn everething that you wan't</p>`),
+    "experience": new fenetre("experience","experience","public/img/notepad.png",`
+        <p>
+        <ul>
+            <li><p> handling job's: I take this kind of job to have all sort of experience, it help me learn rigor and discipline</p></li>
+            <li><p> web job's: I take a lot of benevole web devellopement application</p></li>
+            <li><p> Lua devellopement: because I seek to be a game develloper I learn lua and start to make some game assets</p></li>
+            <li><p> first IT job: I get a job at Prefabat as an application develloper in C# </p></li>
+        </ul>
+        </p>
+    `,``),
 }
 
 for(element in tab){
@@ -112,5 +133,6 @@ function close_fenetre(id){
     for(var i = 0; i < elements.length; i++) {
         elements[i].remove();
     }
-    
 }
+
+
